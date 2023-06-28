@@ -1,7 +1,8 @@
-package de.neuefische.mucjava231petshelter.owner;
+package de.neuefische.mucjava231petshelter.service;
 
-import de.neuefische.mucjava231petshelter.pet.Pet;
-import de.neuefische.mucjava231petshelter.pet.PetService;
+import de.neuefische.mucjava231petshelter.model.Owner;
+import de.neuefische.mucjava231petshelter.model.Pet;
+import de.neuefische.mucjava231petshelter.repo.OwnerScrvice;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class OwnerService {
 
-    private final OwnerRepo ownerRepo;
+    private final OwnerScrvice ownerRepo;
     public final PetService petService;
 
     public List<Owner> findAll(){

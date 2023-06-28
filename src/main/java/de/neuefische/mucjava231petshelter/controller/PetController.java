@@ -1,6 +1,8 @@
-package de.neuefische.mucjava231petshelter.pet;
+package de.neuefische.mucjava231petshelter.controller;
 
 import de.neuefische.mucjava231petshelter.exception.PetNotFoundExceptoin;
+import de.neuefische.mucjava231petshelter.model.Pet;
+import de.neuefische.mucjava231petshelter.service.PetService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

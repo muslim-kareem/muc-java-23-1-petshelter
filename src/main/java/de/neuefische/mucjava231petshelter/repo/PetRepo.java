@@ -1,5 +1,6 @@
-package de.neuefische.mucjava231petshelter.pet;
+package de.neuefische.mucjava231petshelter.repo;
 
+import de.neuefische.mucjava231petshelter.model.Pet;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

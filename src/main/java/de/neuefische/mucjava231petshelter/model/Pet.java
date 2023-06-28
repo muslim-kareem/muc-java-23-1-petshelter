@@ -1,4 +1,4 @@
-package de.neuefische.mucjava231petshelter.pet;
+package de.neuefische.mucjava231petshelter.model;
 
 public record Pet(
         String id,

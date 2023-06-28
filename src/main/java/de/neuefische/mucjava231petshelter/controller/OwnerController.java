@@ -1,5 +1,7 @@
-package de.neuefische.mucjava231petshelter.owner;
+package de.neuefische.mucjava231petshelter.controller;
 
+import de.neuefische.mucjava231petshelter.model.Owner;
+import de.neuefische.mucjava231petshelter.service.OwnerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

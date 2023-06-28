@@ -1,8 +1,10 @@
-package de.neuefische.mucjava231petshelter.pet;
+package de.neuefische.mucjava231petshelter.service;
 
 import de.neuefische.mucjava231petshelter.exception.PetNotFoundExceptoin;
-import de.neuefische.mucjava231petshelter.owner.Owner;
-import de.neuefische.mucjava231petshelter.owner.OwnerRepo;
+import de.neuefische.mucjava231petshelter.model.Owner;
+import de.neuefische.mucjava231petshelter.model.Pet;
+import de.neuefische.mucjava231petshelter.repo.OwnerScrvice;
+import de.neuefische.mucjava231petshelter.repo.PetRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +15,7 @@ import java.util.List;
 public class PetService {
 
     private final PetRepo petRepo;
-    private final OwnerRepo ownerRepo;
+    private final OwnerScrvice ownerScrvice;
 
     public List<Pet> getAllPets(){
         return this.petRepo.findAll();
@@ -57,7 +59,7 @@ public class PetService {
     }
 
     public List<Pet> findAllByOwnerName(String ownerName){
-        Owner theOwner = this.ownerRepo.findByName(ownerName).orElseThrow();
+        Owner theOwner = this.ownerScrvice.findByName(ownerName).orElseThrow();
         return this.petRepo.findAllByOwnerId(theOwner.id());
     }
 }

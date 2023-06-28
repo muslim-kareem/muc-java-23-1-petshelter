@@ -1,6 +1,4 @@
-package de.neuefische.mucjava231petshelter.owner;
-
-import de.neuefische.mucjava231petshelter.pet.Pet;
+package de.neuefische.mucjava231petshelter.model;
 
 import java.util.List;
 
